@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+
+        .box {
+            background-color: white;
+            border: 2px solid steelblue;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .highlight {
+            color: darkgreen;
+            font-weight: bold;
+        }
+
+
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            background-color: navy;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 title="HTML Attributes Demonstration">
+        HTML Attributes Complete Demo
+    </h1>
+
+    <!-- Navigation using IDs -->
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#gallery">Gallery</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <!-- HOME SECTION -->
+    <div class="box" id="home">
+
+        <h2 class="highlight">Home Section</h2>
+
+        <p>
+            This paragraph uses the
+            <strong>class</strong> attribute.
+            Multiple elements share the same class.
+        </p>
+
+        <p title="Hover over me">
+            Hover your mouse over this paragraph to see the
+            <strong>title</strong> tooltip.
+        </p>
+
+        <p style="color:blue;">
+            This paragraph uses the
+            <strong>style</strong> attribute.
+        </p>
+
+        <p hidden>
+            This paragraph is hidden because it uses the
+            <strong>hidden</strong> attribute.
+        </p>
+
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="box" id="about">
+
+        <h2 class="highlight">About Section</h2>
+
+        <p>
+            Every ID is unique.
+            This section has the ID
+            <strong>about</strong>.
+        </p>
+
+        <h3>Absolute Link</h3>
+
+        <a href="https://www.google.com"
+           target="_blank"
+           title="Open Google in a new tab">
+            Visit Google
+        </a>
+
+        <br><br>
+
+        <h3>Relative Link</h3>
+
+        <!-- Create another HTML file named about.html -->
+        <a href="about.html">
+            Open Local About Page
+        </a>
+
+        <br><br>
+
+        <h3>Download Link</h3>
+
+        <!-- Replace with your own file -->
+        <a href="sample.pdf" download>
+            Download PDF
+        </a>
+
+    </div>
+
+    <!-- GALLERY -->
+    <div class="box" id="gallery">
+
+        <h2 class="highlight">Image Gallery</h2>
+
+        <p>
+            Image using src, alt, title, width and height attributes.
+        </p>
+
+        <img
+            src="https://picsum.photos/500/300"
+            alt="Random landscape image"
+            title="Sample Image"
+            width="500"
+            height="300">
+
+        <br><br>
+
+        <h3>Responsive Image</h3>
+
+        <img
+            src="https://picsum.photos/800/400"
+            alt="Responsive Nature Image"
+            title="Responsive Image Example"
+            class="responsive-image">
+
+        <br><br>
+
+        <h3>Clickable Image</h3>
+
+        <a href="https://www.wikipedia.org"
+           target="_blank"
+           title="Open Wikipedia">
+
+            <img
+                src="https://picsum.photos/250"
+                alt="Clickable Image"
+                width="250"
+                height="250">
+
+        </a>
+
+    </div>
+
+    <!-- CONTACT -->
+    <div class="box" id="contact">
+
+        <h2 class="highlight">Contact Section</h2>
+
+        <p>
+            This section demonstrates navigation using IDs.
+        </p>
+
+        <a href="#home">
+            Back to Home
+        </a>
+
+        <br><br>
+
+        <a href="#gallery">
+            Go to Gallery
+        </a>
+
+    </div>
+
+</body>
+
+</html>
